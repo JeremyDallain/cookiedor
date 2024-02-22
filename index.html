@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie d'Or</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fjalla One', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 150px;
+            padding: 0 50px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .moodboard {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-block {
+            position: relative;
+        }
+
+        .cookie {
+            border-radius: 25%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: -50px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .gallery-moodboard {
+            width: 80%;
+            height: auto;
+        }
+
+        @media (max-width: 800px) {
+            .cookie {
+                border-radius: 25%;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 75px;
+                left: -25px;
+            }
+
+            .gallery-moodboard {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Premier championnat Cookie-Dev</h1>
+        <div class="img-block">
+            <h2>Jennifer - Gagnante du Cookie d'OR</h2>
+            <img class="moodboard gold-moodboard" src="/images/jennifer.png" alt="Jennifer moodboard">
+            <img class="cookie" src="/images/cookie-gold.png" alt="gold cookie">
+        </div>
+        <div class="img-block">
+            <h2>Dylan - Gagnant du Cookie Espoir</h2>
+            <img class="moodboard espoir-moodboard" src="/images/dylan1.png" alt="dylan moodboard">
+            <img class="cookie" src="/images/cookie-espoir.png" alt="espoir cookie">
+        </div>
+        <div class="gallery">
+            <h2>Bravo aux autres participants !</h2>
+            <img class="gallery-moodboard" src="/images/benoit.png" alt=" moodboard">
+            <img class="gallery-moodboard" src="/images/charles.png" alt=" moodboard">
+            <img class="gallery-moodboard" src="/images/david.png" alt=" moodboard">
+            <img class="gallery-moodboard" src="/images/franck.png" alt=" moodboard">
+            <img class="gallery-moodboard" src="/images/ahmat.png" alt=" moodboard">
+        </div>
+    </div>
+</body>
+
+</html>
